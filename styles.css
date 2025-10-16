@@ -1,0 +1,166 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Azul muito claro */
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #00bcd4; /* Ciano */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #004d40; /* Verde água escuro */
+}
+
+header .search-bar {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+header .search-bar button {
+    padding: 8px 15px;
+    background-color: #004d40; /* Verde água */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .search-bar button:hover {
+    background-color: #00796b; /* Verde água */
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #00bcd4;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #00796b; /* Verde água */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #004d40; /* Verde água escuro */
+}
+
+/* Seção de produtos */
+.produtos {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e0f7fa; /* Azul mais suave */
+}
+
+.produtos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00796b;
+}
+
+.produto {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.produto p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #00796b;
+}
+
+.produto .btn {
+    margin-top: 10px;
+    background-color: #00bcd4; /* Ciano */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.produto .btn:hover {
+    background-color: #00796b; /* Verde água */
+}
+
+/* Rodapé */
+footer {
+    background-color: #00bcd4;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 1rem;
+}
