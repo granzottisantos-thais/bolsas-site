@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e6f7ff; /* Azul muito claro */
-    color: #004d40; /* Verde água escuro */
+    color: #25d3b6; /* Verde água escuro */
     line-height: 1.5;
 }
 
@@ -44,7 +44,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #004d40;
+    color: #2cb8a0;
 }
 
 /* Barra de pesquisa */
@@ -62,7 +62,7 @@ header nav ul li a:hover {
 }
 
 .search-bar button {
-    background-color: #004d40;
+    background-color: #34dabe;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -73,7 +73,7 @@ header nav ul li a:hover {
 }
 
 .search-bar button:hover {
-    background-color: #00796b;
+    background-color: #37e4d0;
 }
 
 /* Seção hero */
@@ -95,7 +95,7 @@ header nav ul li a:hover {
 }
 
 .hero .btn {
-    background-color: #004d40; /* Verde água escuro */
+    background-color: #24ceb2; /* Verde água escuro */
     padding: 12px 25px;
     color: white;
     text-decoration: none;
@@ -106,7 +106,7 @@ header nav ul li a:hover {
 }
 
 .hero .btn:hover {
-    background-color: #00796b;
+    background-color: #32ffe7;
 }
 
 /* Seção produtos */
