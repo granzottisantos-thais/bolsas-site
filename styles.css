@@ -1,166 +1,209 @@
-/* Resetando margens e paddings */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo e fonte padrão */
+/* Body e fonte */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f8ff; /* Azul muito claro */
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f7ff; /* Azul muito claro */
+    color: #004d40; /* Verde água escuro */
+    line-height: 1.5;
 }
 
 /* Cabeçalho */
 header {
     background-color: #00bcd4; /* Ciano */
-    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding: 15px 30px;
+    flex-wrap: wrap;
 }
 
-header .logo h1 {
-    color: white;
+header .logo {
     font-size: 2rem;
+    font-weight: bold;
+    color: white;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    list-style: none;
+    gap: 25px;
 }
 
 header nav ul li a {
-    text-decoration: none;
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 600;
     font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #004d40; /* Verde água escuro */
+    color: #004d40;
 }
 
-header .search-bar {
-    position: absolute;
-    right: 20px;
+/* Barra de pesquisa */
+.search-bar {
     display: flex;
-    align-items: center;
+    gap: 8px;
 }
 
-header .search-bar input {
-    padding: 8px;
+.search-bar input {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
     font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+    width: 180px;
 }
 
-header .search-bar button {
+.search-bar button {
+    background-color: #004d40;
+    color: white;
+    border: none;
     padding: 8px 15px;
-    background-color: #004d40; /* Verde água */
-    color: white;
-    font-weight: bold;
-    border: none;
     border-radius: 5px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-header .search-bar button:hover {
-    background-color: #00796b; /* Verde água */
+.search-bar button:hover {
+    background-color: #00796b;
 }
 
-/* Seção Hero */
+/* Seção hero */
 .hero {
-    background-color: #00bcd4;
+    background-color: #00bcd4; /* Ciano */
     color: white;
-    padding: 60px 0;
     text-align: center;
+    padding: 70px 20px;
 }
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 30px;
 }
 
 .hero .btn {
-    background-color: #00796b; /* Verde água */
+    background-color: #004d40; /* Verde água escuro */
+    padding: 12px 25px;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
 }
 
 .hero .btn:hover {
-    background-color: #004d40; /* Verde água escuro */
+    background-color: #00796b;
 }
 
-/* Seção de produtos */
+/* Seção produtos */
 .produtos {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
     text-align: center;
-    padding: 50px 0;
-    background-color: #e0f7fa; /* Azul mais suave */
 }
 
 .produtos h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
     color: #00796b;
+    margin-bottom: 40px;
 }
 
+/* Cards de produtos */
 .produto {
     display: inline-block;
-    width: 30%;
-    margin: 15px;
-    text-align: center;
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
 }
 
 .produto img {
     width: 100%;
-    border-radius: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .produto h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
+    color: #004d40;
+    margin: 15px 10px 5px;
+    font-size: 1.2rem;
 }
 
 .produto p {
-    font-size: 1.2rem;
-    margin-top: 5px;
     color: #00796b;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 .produto .btn {
-    margin-top: 10px;
-    background-color: #00bcd4; /* Ciano */
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    background-color: #00bcd4;
     color: white;
-    padding: 10px 20px;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 .produto .btn:hover {
-    background-color: #00796b; /* Verde água */
+    background-color: #00796b;
 }
 
 /* Rodapé */
 footer {
     background-color: #00bcd4;
-    text-align: center;
-    padding: 20px 0;
     color: white;
-    font-size: 1rem;
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+/* Responsividade simples */
+@media (max-width: 900px) {
+    .produto {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .search-bar {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .produto {
+        width: 90%;
+    }
 }
